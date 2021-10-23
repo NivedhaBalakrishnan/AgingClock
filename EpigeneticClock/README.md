@@ -1,29 +1,23 @@
 1. Summary:
 
-Problem:
-    Predicting biological age with first with methylation genome data, then
-    blood test data and eventually with multimodal omics and lifestyle data.
-Why:
-    Aging is the most important disease of the modern world that everyone of
-    us shall deal with at some point.
-    "It has been estimated that the complete elimination of a single fatal 
-    disease such as cancer in the USA would merely lead to a 2.3-year
-    population increase in life expectancy ... since the majority of overall
-    mortality is due to age-related diseases."[2]
-Data: 
-    Data of around 4k entries from the paper[1].
-    GTEx Portal
-    CDC website, NHANES Dataset
-Preprocessing/Training:
-    Standartization/Normalization
-    PCA, GBR, DNN and maybe other regression models to check their performance.[1]
-    Measuring the results based on healthy individuals (assuming their chronological
-    age is close to their biological age)
-Testing/Validating:
-    Since first I think it is more appropriate to play with
-    genome data and apply already made sklearn models, and only then when we will
-    add other types of data like lifestyle information then it is more appropriate
-    to integrate a more low-level level framework like pytorch.
+Problem:  
+    Predicting biological age with first with methylation genome data, then blood test data and eventually with multimodal omics and lifestyle data.  
+Why:  
+    Aging is the most important disease of the modern world that everyone of us shall deal with at some point.
+    "It has been estimated that the complete elimination of a single fatal disease such as cancer in the USA would merely lead to a 2.3-year population increase in life expectancy ... since the majority of overall mortality is due to age-related diseases."[2]  
+Data:  
+    Data of around 4k entries from the paper[1].  
+    GTEx Portal  
+    CDC website, NHANES Dataset  
+Preprocessing/Training:  
+    Standartization/Normalization  
+    PCA, GBR, DNN and maybe other regression models to check their performance.[1]  
+    Measuring the results based on healthy individuals (assuming their chronological age is close to their biological age)  
+Testing/Validating:  
+    Since first I think it is more appropriate to play with  
+    genome data and apply already made sklearn models, and only then when we will  
+    add other types of data like lifestyle information then it is more appropriate  
+    to integrate a more low-level level framework like pytorch.  
 
 
 2. Presentation transcript:
@@ -95,12 +89,12 @@ website. Later on if everything goes well I can imagine using terraform for
 easier cloud management and kubernetes.  
 
 
-References:
+References:  
 [1]
 Li, X.; Li, W.; Xu, Y. Human Age Prediction Based on DNA Methylation Using a
 Gradient Boosting Regressor. Genes 2018, 9, 424.
-https://doi.org/10.3390/genes9090424
+https://doi.org/10.3390/genes9090424   
 [2]
 Zhavoronkov, A., Bischof, E. & Lee, KF. Artificial intelligence in
 longevity medicine. Nat Aging 1, 5–7 (2021).
-https://doi.org/10.1038/s43587-020-00020-4
+https://doi.org/10.1038/s43587-020-00020-4   
