@@ -1,2 +1,2 @@
 # AgingClock
-Implementation of the Horvath Aging Clock in Python
+End-to-end implementation of the hematologic clock based on the paper from Zhavoronkov et al. titled Population Specific Biomarkers of Human Aging using NHANES dataset and PyTorch.
