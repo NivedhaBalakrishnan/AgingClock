@@ -75,10 +75,9 @@ Later on if everything goes well I can imagine using terraform for easier cloud 
 
 ## References:  
 [1]<a name="ref1"></a>
-Li, X.; Li, W.; Xu, Y. Human Age Prediction Based on DNA Methylation Using a
-Gradient Boosting Regressor. Genes 2018, 9, 424.
-https://doi.org/10.3390/genes9090424   
+[Li, X.; Li, W.; Xu, Y. Human Age Prediction Based on DNA Methylation Using a
+Gradient Boosting Regressor. Genes 2018, 9, 424.](https://doi.org/10.3390/genes9090424)
+
 [2]<a name="ref2"></a>
-Zhavoronkov, A., Bischof, E. & Lee, KF. Artificial intelligence in
-longevity medicine. Nat Aging 1, 5–7 (2021).
-https://doi.org/10.1038/s43587-020-00020-4   
+[Zhavoronkov, A., Bischof, E. & Lee, KF. Artificial intelligence in
+longevity medicine. Nat Aging 1, 5–7 (2021).](https://doi.org/10.1038/s43587-020-00020-4)   
