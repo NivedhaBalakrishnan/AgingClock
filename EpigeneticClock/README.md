@@ -1,4 +1,4 @@
-# 1. Summary:
+# Summary:
 
 ## Problem:  
 Predicting biological age with first with methylation genome data, then blood test data and eventually with multimodal omics and lifestyle data.  
@@ -19,7 +19,7 @@ Data of around 4k entries from the paper[[1]](#ref1).
 Since first I think it is more appropriate to play with genome data and apply already made sklearn models, and only then when we will add other types of data like lifestyle information then it is more appropriate to integrate a more low-level level framework like pytorch.  
 
 
-# 2. Presentation transcript:
+# Presentation transcript:
 
 Let me first answer the most important question. 
 
@@ -41,7 +41,9 @@ code should be actively executed. With time this software 'rots' and the wrong c
 In biological terms you can see this as a cell in your brain is due to the wrong epigenetic 
 information behaves like a skin cell and vice versa. 
 
-So, having this big picture in mind, you may ask *why deep learning*?  
+So, having this big picture in mind, you may ask:  
+> **Why deep learning?** 
+
 Well health industry generates tons and tons of electronic data especially nowadays, and all 
 of this data from clinical trials to medical records in hospitals can be used for every step in drug discovery.  
 However this is too complicated for a project of this scale, so let's focus on more manageable task which is predicting accurate biological age -- one of the methods of doing so is by inspecting epigentic information mentioned before. So the goal here is to produce accurate biological age so we can measure how effective are drugs that we discover. And here we can see that all off the data can go into a deep neural network and as an output we get 
@@ -71,7 +73,7 @@ website.
 Later on if everything goes well I can imagine using terraform for easier cloud management and kubernetes.  
 
 
-References:  
+## References:  
 [1]<a name="ref1"></a>
 Li, X.; Li, W.; Xu, Y. Human Age Prediction Based on DNA Methylation Using a
 Gradient Boosting Regressor. Genes 2018, 9, 424.
