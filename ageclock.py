@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import math
 import torch
@@ -13,9 +9,7 @@ from torch.utils.data import DataLoader
 from pathlib import Path
 import pandas as pd
 
-# In[3]:
-
-MODEL_PATH = Path.cwd()/'Models'
+MODEL_PATH = Path.cwd()/'models'
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Eve(optim.Optimizer):
@@ -101,10 +95,6 @@ class Eve(optim.Optimizer):
 
         return loss
 
-
-# In[4]:
-
-
 class CustomDataset(Dataset):
     def __init__(self, df, transform=None, target_transform=None):
         self.df = df
@@ -124,10 +114,6 @@ class CustomDataset(Dataset):
         if self.target_transform:
             y = self.target_transform(y)
         return x, y
-
-
-# In[5]:
-
 
 class NN(nn.Module):
     def __init__(self, layers=[1000,500,250], ps=0.35, in_features=20, y_range=(20, 90)):
@@ -156,10 +142,6 @@ class NN(nn.Module):
     def __repr__(self):
         return "Linear -> LeakyReLU -> Dropout\nlayers: {}\nps: {}\n".format(self.layers, self.ps)
 
-
-# In[6]:
-
-
 def test(dataloader, model, loss_fn):
     size = len(dataloader.dataset)
     num_batches = len(dataloader)
@@ -174,10 +156,6 @@ def test(dataloader, model, loss_fn):
     test_loss /= num_batches
     in_5_range /= size
     print(f"Error: \n Predictions in 5 range: {(100*in_5_range):>0.1f}%, Avg loss: {test_loss:>8f} \n")
-
-
-# In[7]:
-
 
 def train(dataloader, model, loss_fn, optimizer):
     def closure():
@@ -196,9 +174,6 @@ def train(dataloader, model, loss_fn, optimizer):
         else:
             loss = closure()
             optimizer.step()
-
-# In[8]:
-
 
 def train_test(train_path='Data/train_data.csv', test_path='Data/test_data.csv',
                optimizer=None, loss_fn=nn.L1Loss(), epochs=5, lr=1e-3,
